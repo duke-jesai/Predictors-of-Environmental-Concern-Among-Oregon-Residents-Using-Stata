@@ -1,0 +1,47 @@
+-------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  C:\Users\Nyatichi\Desktop\Github\oregon_environment_regression.log
+  log type:  text
+ opened on:  12 May 2026, 08:40:52
+
+. do "C:\Users\Nyatichi\AppData\Local\Temp\STD3d8c_000000.tmp"
+
+. use ops2004.dta, clear
+
+. 
+end of do-file
+
+. do "C:\Users\Nyatichi\AppData\Local\Temp\STD3d8c_000000.tmp"
+
+. regress env_con educat inc com3 hlthprob epht3, beta
+
+      Source |       SS           df       MS      Number of obs   =     3,769
+-------------+----------------------------------   F(5, 3763)      =    320.15
+       Model |   647.67794         5  129.535588   Prob > F        =    0.0000
+    Residual |  1522.55872     3,763  .404613001   R-squared       =    0.2984
+-------------+----------------------------------   Adj R-squared   =    0.2975
+       Total |  2170.23666     3,768  .575965144   Root MSE        =    .63609
+
+------------------------------------------------------------------------------
+     env_con |      Coef.   Std. Err.      t    P>|t|                     Beta
+-------------+----------------------------------------------------------------
+      educat |  -.0011841    .004077    -0.29   0.772                -.0044584
+         inc |  -5.51e-08   3.62e-07    -0.15   0.879                -.0023317
+        com3 |   .0503162   .0092717     5.43   0.000                  .074352
+    hlthprob |  -.2974035   .0248129   -11.99   0.000                 -.172927
+       epht3 |  -.4020741    .012687   -31.69   0.000                -.4575999
+       _cons |   3.726345   .0651735    57.18   0.000                        .
+------------------------------------------------------------------------------
+
+. 
+end of do-file
+
+. save "C:\Users\Nyatichi\Desktop\Github\ops2004.dta"
+file C:\Users\Nyatichi\Desktop\Github\ops2004.dta saved
+
+. log close
+      name:  <unnamed>
+       log:  C:\Users\Nyatichi\Desktop\Github\oregon_environment_regression.log
+  log type:  text
+ closed on:  12 May 2026, 09:07:44
+-------------------------------------------------------------------------------------------------------------------
