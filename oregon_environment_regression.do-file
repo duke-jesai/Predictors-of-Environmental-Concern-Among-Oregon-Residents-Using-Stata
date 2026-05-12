@@ -1,0 +1,18 @@
+/**************************************************************************
+Project: Predictors of Environmental Concern Among Oregon Residents
+Author: Duke Ogeto Jesai
+Software: Stata
+Dataset: ops2004.dta
+
+Description:
+This project examines factors associated with environmental concern
+among Oregon residents using multiple regression analysis.
+
+**************************************************************************/
+
+* Set up the data on stata
+use ops2004.dta, clear
+
+* Multiple regression analysis
+
+regress env_con educat inc com3 hlthprob epht3, beta
