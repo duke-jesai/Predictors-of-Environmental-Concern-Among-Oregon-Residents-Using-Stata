@@ -45,3 +45,34 @@ file C:\Users\Nyatichi\Desktop\Github\ops2004.dta saved
   log type:  text
  closed on:  12 May 2026, 09:07:44
 -------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  C:\Users\Nyatichi\Desktop\Github\oregon_environment_regression.log
+  log type:  text
+ opened on:  12 May 2026, 09:28:47
+
+. do "C:\Users\Nyatichi\AppData\Local\Temp\STD3d8c_000000.tmp"
+
+. pcorr env_con educat inc com3 hlthprob epht3
+(obs=3769)
+
+Partial and semipartial correlations of env_con with
+
+               Partial   Semipartial      Partial   Semipartial   Significance
+   Variable |    Corr.         Corr.      Corr.^2       Corr.^2          Value
+------------+-----------------------------------------------------------------
+     educat |  -0.0047       -0.0040       0.0000        0.0000         0.7715
+        inc |  -0.0025       -0.0021       0.0000        0.0000         0.8788
+       com3 |   0.0881        0.0741       0.0078        0.0055         0.0000
+   hlthprob |  -0.1918       -0.1637       0.0368        0.0268         0.0000
+      epht3 |  -0.4590       -0.4327       0.2107        0.1873         0.0000
+
+. 
+end of do-file
+
+. log close
+      name:  <unnamed>
+       log:  C:\Users\Nyatichi\Desktop\Github\oregon_environment_regression.log
+  log type:  text
+ closed on:  12 May 2026, 09:33:47
+-------------------------------------------------------------------------------------------------------------------

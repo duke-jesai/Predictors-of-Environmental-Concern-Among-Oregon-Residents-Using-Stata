@@ -16,3 +16,7 @@ use ops2004.dta, clear
 * Multiple regression analysis
 
 regress env_con educat inc com3 hlthprob epht3, beta
+
+* Run the pcorr command to estimate the increment in R2.
+pcorr env_con educat inc com3 hlthprob epht3
+
