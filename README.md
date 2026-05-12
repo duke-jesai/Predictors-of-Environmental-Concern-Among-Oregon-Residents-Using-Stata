@@ -74,6 +74,12 @@ This project demonstrates the application of multiple regression analysis using 
 
 The findings suggest that environmental health perceptions and community identification play important roles in shaping environmental concern among Oregon residents, while education and income showed limited predictive influence in this model.
 
+## Run the pcorr command to estimate the increment in R2. 
+
+ pcorr env_con educat inc com3 hlthprob epht3
+
+The concern for environmental health problems has an increment to R2 of 0.1873, p < 0.001.
+
 ## Software Used
 
 - Stata
@@ -85,7 +91,4 @@ The repository contains:
 - Dataset used for analysis
 - Stata do-file
 - Log file
-- Regression output file
-│   └── regression_results.txt
-│
-└── README.md
+- Regression output file on log file
